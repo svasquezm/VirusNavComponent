@@ -3,4 +3,10 @@
 
     <string name="home">Home</string>
     <string name="help">Help</string>
+    <string name="not_implemented">Not implemented yet</string>
+    <string name="not_implemented_explanation">This feature is not developed yet</string>
+    <string name="error">Server error</string>
+    <string name="error_explanation">Try again later</string>
+    <string name="not_found">Not found</string>
+    <string name="not_found_explanation">Resource was not found</string>
 </resources>
