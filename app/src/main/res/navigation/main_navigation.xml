@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/virusListFragment">
+
+    <fragment
+        android:id="@+id/virusListFragment"
+        android:name="cl.svasquezm.virusnavcomponent.VirusListFragment"
+        android:label="fragment_virus_list"
+        tools:layout="@layout/fragment_virus_list" >
+        <action
+            android:id="@+id/action_virusListFragment_to_virusDetailsFragment"
+            app:destination="@id/virusDetailsFragment" />
+        <action
+            android:id="@+id/action_virusListFragment_to_notFoundFragment"
+            app:destination="@id/notFoundFragment" />
+        <action
+            android:id="@+id/action_virusListFragment_to_serverErrorFragment"
+            app:destination="@id/serverErrorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/virusDetailsFragment"
+        android:name="cl.svasquezm.virusnavcomponent.VirusDetailsFragment"
+        android:label="fragment_virus_details"
+        tools:layout="@layout/fragment_virus_details" />
+
+    <fragment
+        android:id="@+id/notFoundFragment"
+        android:name="cl.svasquezm.virusnavcomponent.NotFoundFragment"
+        android:label="fragment_not_found"
+        tools:layout="@layout/fragment_not_found" />
+
+    <fragment
+        android:id="@+id/serverErrorFragment"
+        android:name="cl.svasquezm.virusnavcomponent.ServerErrorFragment"
+        android:label="fragment_server_error"
+        tools:layout="@layout/fragment_server_error" />
+
+    <fragment
+        android:id="@+id/noImplementedFragment"
+        android:name="cl.svasquezm.virusnavcomponent.NoImplementedFragment"
+        android:label="fragment_no_implemented"
+        tools:layout="@layout/fragment_no_implemented" />
+
+    <action
+        android:id="@+id/action_global_noImplementedFragment"
+        app:destination="@id/noImplementedFragment" />
+
+    <action
+        android:id="@+id/action_global_virusListFragment"
+        app:destination="@id/virusListFragment" />
+</navigation>
