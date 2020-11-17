@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/virusListFragment"
-        android:name="cl.svasquezm.virusnavcomponent.VirusListFragment"
+        android:name="cl.svasquezm.virusnavcomponent.fragments.VirusListFragment"
         android:label="fragment_virus_list"
         tools:layout="@layout/fragment_virus_list" >
         <action
@@ -16,32 +16,29 @@
         <action
             android:id="@+id/action_virusListFragment_to_notFoundFragment"
             app:destination="@id/notFoundFragment" />
-        <action
-            android:id="@+id/action_virusListFragment_to_serverErrorFragment"
-            app:destination="@id/serverErrorFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/virusDetailsFragment"
-        android:name="cl.svasquezm.virusnavcomponent.VirusDetailsFragment"
+        android:name="cl.svasquezm.virusnavcomponent.fragments.VirusDetailsFragment"
         android:label="fragment_virus_details"
-        tools:layout="@layout/fragment_virus_details" />
+        tools:layout="@layout/fragment_virus_details" >
+
+        <argument
+            android:name="virusId"
+            app:argType="string" />
+
+    </fragment>
 
     <fragment
         android:id="@+id/notFoundFragment"
-        android:name="cl.svasquezm.virusnavcomponent.NotFoundFragment"
+        android:name="cl.svasquezm.virusnavcomponent.fragments.NotFoundFragment"
         android:label="fragment_not_found"
         tools:layout="@layout/fragment_not_found" />
 
     <fragment
-        android:id="@+id/serverErrorFragment"
-        android:name="cl.svasquezm.virusnavcomponent.ServerErrorFragment"
-        android:label="fragment_server_error"
-        tools:layout="@layout/fragment_server_error" />
-
-    <fragment
         android:id="@+id/noImplementedFragment"
-        android:name="cl.svasquezm.virusnavcomponent.NoImplementedFragment"
+        android:name="cl.svasquezm.virusnavcomponent.fragments.NoImplementedFragment"
         android:label="fragment_no_implemented"
         tools:layout="@layout/fragment_no_implemented" />
 
