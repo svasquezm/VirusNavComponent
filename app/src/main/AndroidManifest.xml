@@ -10,9 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VirusNavComponent">
         <activity android:name=".MainActivity">
+            <nav-graph android:value="@navigation/main_navigation" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
