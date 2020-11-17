@@ -8,6 +8,9 @@ Application is built on Android's Navigation Component using concepts like:
 * `SafeArgs`
 * `Deepinks`
 
+## Version
+* nav_version: 2.3.1
+
 ### Deeplink support
 To test deeplinks, execute:
 
